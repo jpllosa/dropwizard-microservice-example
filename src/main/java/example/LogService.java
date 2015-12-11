@@ -16,7 +16,7 @@ public class LogService extends Application<Configuration> {
 		
 		@GET
 		public void get(@QueryParam("m") String message, @QueryParam("s") String stacktrace) {
-			System.out.println("message: " + message + ", stacktrace: " + stacktrace);
+			System.err.println("message: " + message + ", stacktrace: " + stacktrace);
 		}
 	}
 	
